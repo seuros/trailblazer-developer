@@ -12,7 +12,7 @@ module Trailblazer
 
     module Wtf
       class Node < Trailblazer::Circuit::Node
-        def call(lib_ctx, flow_options, signal, **circuit_options)
+        def call(lib_ctx, flow_options, signal, circuit_options)
           begin
             lib_ctx, flow_options, signal = super
           rescue
